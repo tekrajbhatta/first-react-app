@@ -7,6 +7,12 @@ import Card from './Card';
 
 function App() {
   var [a, b] = useState(0);
+  let myObj = {
+    userName: "SaggyBoy",
+    email: "saggy@gmail.com",
+    age: 25
+  };
+  let newArr = [1, 2, 3, 4, 5];
   return (
     <>
       <div className="w-ful min-h-screen bg-zinc-900 p-4">
@@ -23,7 +29,8 @@ function App() {
         </div>
         <Colors />
         <Counter />
-        <Card />
+        <Card mycardname="Test Card 1" btnText="Click me" someObj={myObj} someArr={newArr} />
+        <Card mycardname="Test Card 2" />
         <Tailwindlearn />
       </div>
     </>
