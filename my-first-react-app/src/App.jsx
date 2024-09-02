@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import Products from './Products'
 import Colors from './Colors';
 import Counter from './Counter';
+import Tailwindlearn from './Tailwindlearn';
+import Card from './Card';
 
 function App() {
   var [a, b] = useState(0);
@@ -21,6 +23,8 @@ function App() {
         </div>
         <Colors />
         <Counter />
+        <Card />
+        <Tailwindlearn />
       </div>
     </>
   );
