@@ -9,7 +9,24 @@ function Counter() {
         if(count < 20) {
             count = count + 1;
             setCount(count)
-            // console.log('Count value is: ' + count);
+            
+            // // Question:- What will be the output of following code when we click on Add Value button?
+            // // count = count + 1;
+            // // setCount(count)
+            // // setCount(count)
+            // // setCount(count)
+
+            // // Answer:- 3 is wrong because useState sends the values to all the variables in UI in bacthes form(due to Fibre Algorithm), 
+            // // so it understand above expression as, same repeated work with same batch value so it think the same batch values are coming and select the same value i.e. increment by 1 in this case
+            // // get previous counter value 
+            // // since any of the state, for eg: setCount in our case, is function which returns a value
+            // // we can get the value of previous state and then upate it, so the code below will work
+            // // here, the value of counter is coming through the callback so after the callback there will be another call so it udpates the value
+            // setCount(counter => counter + 1)
+            // setCount(counter => counter + 1)
+            // setCount(counter => counter + 1)
+
+            console.log('Count value is: ' + count);
         }
     }
 
@@ -17,7 +34,7 @@ function Counter() {
         if(count > 0 ) {
             count = count - 1;
             setCount(count)
-            // console.log('Count value is: ' + count);
+            console.log('Count value is: ' + count);
         }
     }
     return(
