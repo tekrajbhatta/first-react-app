@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Products from './Products'
 import Colors from './Colors';
+import Counter from './Counter';
 
 function App() {
   var [a, b] = useState(0);
@@ -19,6 +20,7 @@ function App() {
           <button onClick={() => b(a+1)} className='px-6 py-3 bg-green-500 rounded-md text-sm'>Click</button>
         </div>
         <Colors />
+        <Counter />
       </div>
     </>
   );
